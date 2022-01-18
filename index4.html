@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lesson25</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  $(function () {
+    var navPos = $(id = nav2).offset().top
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > navPos) {
+        $(id = nav2).css("position", "fixed");
+      } else {
+        $(id = nav2).css("position", "static");
+      }
+    });
+  });
+</script>
+</head>
+<body>
+    
+<div>
+  <header>
+    <h1>位址</h1>
+  </header>
+  <nav id=nav2>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="index2.html">簡介</a></li>
+      <li><a href="index3.html">幻燈片</a></li>
+      <li><a href="index4.html">位址</a></li>
+      <li><a href="index5.html">其他</a></li>
+    </ul>
+  </nav><hr>
+  <div style="text-align:center;">
+    <div><img src="img/013.jpg" style="display: block;margin: auto;"></div>
+    <p>地點：秋紅谷景觀生態公園<br>
+        營業時間：24小時開放 (周一至周日)<br>
+        地址：台中市西屯區朝富路30號 (地圖)<br>
+        交通：台中火車站搭300號公車、逢甲大學搭5號公車到「秋紅谷站」</p>
+        
+  </div>
+
+</div>
+</body>
+</html>
